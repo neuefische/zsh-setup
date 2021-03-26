@@ -2,4 +2,4 @@
 # Install macOS apps
 brew tap homebrew/cask-fonts && brew install --cask font-fira-code &&
 brew tap homebrew/cask-versions && brew install --cask firefox-developer-edition &&
-for x in iterm2 slack visual-studio-code rectangle postman mongodb-compass zoomus quicklook-csv quicklook-json webpquicklook; do brew install --cask $x; done
+for x in iterm2 slack visual-studio-code rectangle mongodb-compass quicklook-csv quicklook-json webpquicklook; do brew install --cask $x; done
