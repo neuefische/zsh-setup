@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 # Install homebrew, then install formulae
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" &&
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/`echo $USER`/z.profile eval "(/opt/homebrew/bin/brew shellenv)" &&
 for x in zsh git antigen zsh-completions exa fasd tree bat; do brew install $x; done &&
 brew install fzf && $(brew --prefix)/opt/fzf/install
 
